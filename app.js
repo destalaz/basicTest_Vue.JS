@@ -6,7 +6,10 @@ new Vue({
         age:22,
         status:false,
         website:'https://www.facebook.com/time.nopphagulporn',
-        count:0
+        count:0,
+        colors:[],
+        gender:'',
+        
     },
     methods:{
         getName:function(){
