@@ -11,6 +11,7 @@
         <div id="vue-app">
             <!-- v-model ค่าจะเปลี่ยนไปตามที่ใส่ -->
             Name : <input type="text" v-model="name">
+            <br/>
             Color Fav : 
             <input type="checkbox" value="red" v-model="colors">
             <label>red</label>
@@ -29,6 +30,17 @@
             <label>Female</label>
             <br>
 
+            อาชีพ : 
+            <select v-model="job">
+               <option disabled value ="">pls choose your job</option>
+               <option>Programmer</option>
+               <option>student</option>
+            </select><br/><br/>
+            
+            <!-- Condition v-if -->
+            <button type="button" v-on:click="show=!show">SHOW</button>
+            <h1 v-if="show">Hello World</h1>
+
             <hr>
             <h1>Name : {{name}}</h1>
             <h1>Job : {{job}}</h1>
@@ -36,6 +48,7 @@
             <h1>Website : <a v-bind:href="website">link here...</a></h1>
             <h1>Color : {{colors}}</h1>
             <h1>Gender : {{gender}}</h1>
+            <h1>Job ": {{job}}</h1>
 
              <!-- Note1 -->
             <!-- การใช้งาน v-bind คือการผูกค่าตัวแปรของ vue app กับ attribute ของ tag html ต่างๆ โดยสามารถเป็น tag อะไรก็ได้ -->

@@ -2,13 +2,14 @@ new Vue({
     el:"#vue-app",
     data:{
         name:"Time",
-        job:"GoGO",
+        job:"",
         age:22,
         status:false,
         website:'https://www.facebook.com/time.nopphagulporn',
         count:0,
         colors:[],
         gender:'',
+        show: false,
         
     },
     methods:{
